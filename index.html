@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="title_container">
+        <p>Enter your password</p>
+      </div>
+
+      <div class="img_container">
+        <div class="img">
+          <img src="img/avatar.jpg" alt="Avatar" class="avatar" />
+        </div>
+        <div class="container_username">
+          <div class="function">
+            <p>Business Account</p>
+          </div>
+          <div class="username">
+            <p>Sarah Bills</p>
+          </div>
+        </div>
+      </div>
+
+      <form action="action_page.php" method="post">
+        <div class="container_1">
+          <div class="container_pass">
+            <label for="id_password">Password</label>
+            <input
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              required=""
+              id="id_password"
+            />
+            <i class="far fa-eye" id="togglePassword"></i>
+          </div>
+        </div>
+
+        <div class="container_buttons">
+          <div class="container_switch">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="container_text">
+            <p>Stay signed in</p>
+          </div>
+          <div class="container_cont">
+            <button type="button" class="contbtn">Continue</button>
+          </div>
+        </div>
+
+        <div class="container_reset">
+          <a href="#">Reset password</a>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#id_password");
+
+      togglePassword.addEventListener("click", function (e) {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        // toggle the eye slash icon
+        this.classList.toggle("fa-eye-slash");
+      });
+    </script>
+  </body>
+</html>

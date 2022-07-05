@@ -1,0 +1,253 @@
+* {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f9;
+}
+
+.switch {
+  position: relative;
+  width: 56px;
+  height: 30px;
+  display: flex;
+  margin-top: 20px;
+  background: #fff;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-style: solid;
+  border-width: thin;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #1d3153;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1d3153;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.title_container {
+  color: #1d3153;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+}
+.title_container p {
+  background: #fff;
+}
+
+.img_container {
+  display: inline-flex;
+  background: #fff;
+}
+
+.img {
+  background: #fff;
+}
+
+.container_username {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.function {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 1px;
+  background: #fff;
+}
+
+.function p {
+  background: #fff;
+  color: #1d3153;
+  font-size: 15px;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+
+  background: #fff;
+}
+
+.username p {
+  background: #fff;
+  color: #1d3153;
+  margin: 5px;
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.function p {
+  margin: 5px;
+  margin-bottom: 0px;
+  background: #fff;
+}
+
+.avatar {
+  display: flex;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #fff;
+}
+
+input[type="password"] {
+  border-radius: 5px;
+  font-size: 30px;
+  max-width: 270px;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #1d3153;
+  background: #fff;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  font-size: 30px;
+  max-width: 270px;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #1d3153;
+  background: #fff;
+}
+
+.fa-eye {
+  font-size: 20px;
+  color: #1d3153;
+  margin-left: 10px;
+  background: #fff;
+}
+
+.container_1 {
+  margin-top: 15px;
+  background: #fff;
+}
+
+.container_pass {
+  max-width: 320px;
+  background: #fff;
+  margin-right: 0px;
+}
+
+.container_pass label {
+  background: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.container_buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+}
+
+.container_text {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  background: #fff;
+}
+
+.container_text p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.container_cont {
+  margin-top: 15px;
+  margin-left: 10px;
+  background: #fff;
+}
+
+.contbtn {
+  padding: 10px;
+  display: flex;
+  margin-left: 30px;
+  border-radius: 5px;
+  background-color: #1d3153;
+  color: white;
+}
+
+.container_reset {
+  margin-top: 30px;
+  font-weight: bold;
+  background: #fff;
+  border: none;
+}
+
+.container_reset a {
+  color: #1d3153;
+  font-size: 15px;
+  background: #fff;
+}
+
+.container_switch {
+  background: #fff;
+}
+
+.card {
+  left: 50%;
+  margin: auto;
+  padding: 25px 0px 25px 40px;
+  max-width: 375px;
+  background: #fff;
+  border: 1px hidden #ccc;
+  border-radius: 15px;
+}
+
+form {
+  background: #fff;
+}

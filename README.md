@@ -1,2 +1,2 @@
 Simple login form with show password toggle.
-https://github.com/horeatiff/Login-Form.git
+https://horeatiff.github.io/Login-Form/
